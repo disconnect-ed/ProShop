@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
+import CartPage from "./pages/CartPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Container>
                 <Route exact path='/' render={() => <HomePage/>}/>
                 <Route path='/product/:id' render={() => <ProductPage/>}/>
+                <Route path='/cart/:id?' render={() => <CartPage/>}/>
             </Container>
         </main>
         <Footer/>
